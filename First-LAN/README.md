@@ -2,11 +2,11 @@
 
 Ahmed, Umar, Haider, and Qasim need to communicate with each other over a small local network.
 
-![Hosts](../images/hosts.png)
+![Hosts](images/hosts.png)
 
 In this lab, we build a basic **Local Area Network (LAN)** using a Cisco 2960 switch.
 
-![Cisco Switch](../images/switch-2960.png)
+![Cisco Switch](images/switch-2960.png)
 
 
 The intended IPv4 network for all four hosts is:
@@ -44,7 +44,7 @@ A single **Cisco 2960 switch** acts as the central Layer 2 device, while four PC
 
 There is no router in this topology.
 
-![Physical Topology](../images/nocable-topology.png)
+![Physical Topology](images/nocable-topology.png)
 
 Therefore, this lab contains **one LAN and one IPv4 subnet** rather than multiple networks that need to be routed.
 
@@ -102,7 +102,7 @@ We configure the PCs through:
 
 Ahmed is configured with:
 
-![Ahmed's Configuration](../images/config-ahmed.png)
+![Ahmed's Configuration](images/config-ahmed.png)
 
 ```text
 IP Address:    192.168.1.1
@@ -131,7 +131,7 @@ Subnet Mask:   255.255.255.0
 
 Qasim is configured separately.
 
-![Qaim's Configuration](../images/config-qasim.pn)
+![Qaim's Configuration](images/config-qasim.pn)
 
 At this stage, we will not assume that every configuration is correct. The network will be tested after the physical connections are complete, and any unexpected behavior will need to be investigated.
 
@@ -152,7 +152,7 @@ The four PCs are connected to the Cisco 2960 using **Copper Straight-Through** c
 
 At this point, the switch provides the **Layer 2 connectivity** between the four hosts.
 
-![Physical Connection](../images/physical-topology.png)
+![Physical Connection](images/physical-topology.png)
 
 The next question is whether the hosts can actually communicate at the IP layer.
 
@@ -188,7 +188,7 @@ Rather than assuming that everything is working, we start with a simple connecti
 ping 192.168.1.2
 ```
 
-![Ping Umar](../images/ping-umar.png)
+![Ping Umar](images/ping-umar.png)
 
 The ping succeeds.
 
@@ -200,7 +200,7 @@ Ahmed can communicate with Umar.
 ping 192.168.1.3
 ```
 
-![Ping Haider](../images/ping-haider.png)
+![Ping Haider](images/ping-haider.png)
 
 This test also succeeds.
 
@@ -216,7 +216,7 @@ We now test communication with Qasim.
 ping 192.168.1.4
 ```
 
-![Ping Qasim](../images/ping-qasim.png)
+![Ping Qasim](images/ping-qasim.png)
 
 The ping fails.
 
@@ -325,7 +325,7 @@ We now correct Qasim's IPv4 configuration so that it matches the intended addres
 
 Qasim is changed to:
 
-![Reconfigure Qasim's IP](../images/qasim-reconfig.png)
+![Reconfigure Qasim's IP](images/qasim-reconfig.png)
 
 Qasim now belongs to the same IPv4 network as the other hosts.
 
@@ -403,7 +403,7 @@ So the MAC address table helps demonstrate an important troubleshooting concept:
 
 We can also generate traffic by pinging the hosts and then inspect the table again:
 
-![MAC Address Table](../images/mac-address-table.png)
+![MAC Address Table](images/mac-address-table.png)
 
 Because the switch learns source MAC addresses from Ethernet frames, traffic generated during our connectivity tests helps the switch build or refresh its MAC address table.
 
@@ -436,7 +436,7 @@ We return to Ahmed and repeat the failed test.
 ping 192.168.1.4
 ```
 
-![Testing Qasim](../images/testing-qasim.png)
+![Testing Qasim](images/testing-qasim.png)
 
 This time, the ping succeeds.
 
@@ -448,7 +448,7 @@ Qasim → Umar
 Qasim → Haider
 ```
 
-![Qasim Pings](../images/qasim-pings.png)
+![Qasim Pings](images/qasim-pings.png)
 
 All four hosts can now communicate successfully within the LAN.
 
