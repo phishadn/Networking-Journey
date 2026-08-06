@@ -216,7 +216,7 @@ We now test communication with Qasim.
 ping 192.168.1.4
 ```
 
-![Ping Qasim](..images/ping-qasim.png)
+![Ping Qasim](../images/ping-qasim.png)
 
 The ping fails.
 
@@ -325,7 +325,7 @@ We now correct Qasim's IPv4 configuration so that it matches the intended addres
 
 Qasim is changed to:
 
-![Reconfigure Qasim's IP](..images/qasim-reconfig.png)
+![Reconfigure Qasim's IP](../images/qasim-reconfig.png)
 
 Qasim now belongs to the same IPv4 network as the other hosts.
 
