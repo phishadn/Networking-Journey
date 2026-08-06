@@ -131,7 +131,7 @@ Subnet Mask:   255.255.255.0
 
 Qasim is configured separately.
 
-![Qaim's Configuration](images/config-qasim.pn)
+![Qaim's Configuration](images/config-qasim.png)
 
 At this stage, we will not assume that every configuration is correct. The network will be tested after the physical connections are complete, and any unexpected behavior will need to be investigated.
 
