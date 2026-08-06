@@ -428,9 +428,9 @@ The switch can successfully learn and forward frames based on MAC addresses even
 
 ----
 
-# 15. Verifying the Fix
+# 15. Verifying the Corrected Configuration
 
-We return to Ahmed and repeat the failed test.
+With Qasim's IP address corrected, we perform another connectivity test from Haider's PC to verify that Qasim is now reachable.
 
 ```text
 ping 192.168.1.4
